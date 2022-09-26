@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="ContactUs.css">
+    <script defer src="ContactUs.js"></script>
+</head>
+<body>
+    <div class="header">
+        <a href="../Home/home.html" id="logo"></a>
+
+        <div class="nav-button">
+                <img id="button" src="assets/icon/menu-before.png" alt="">
+         
+                <div class="navigation">
+                    <a href="../About Us/AboutUs.html"><li>About Us</li></a> 
+                    
+                    <a href="../Menu/food.html"><li>Menu</li></a>
+                        
+                    <a href="../Location/jakarta.html"><li>Location</li></a>
+                        
+                    <a href="../Contact Us/ContactUs.html"><li id="contact">Contact Us</li></a>
+                </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Contact Us</h1>
+
+        <form action="../Home/home.html">
+            <div class="box">
+                Name &emsp; <input type="text" name="" id="name" size="">
+            </div>
+            <span id="errorName" class="error"></span>
+            <br>
+
+            <div class="box">
+                 Email &emsp; <input type="email" id="email" size="">
+            </div>
+            <span id="errorEmail" class="error"></span>
+            <br>
+
+            <div>
+                Gender &ensp;
+                <input type="radio" name="gender" id="male"> Male 
+                <input type="radio" name="gender" id="female"> Female
+            </div>
+            <span id="errorGender" class="error"></span>
+            <br> 
+
+            <div>
+                Branch &ensp;
+                <select name="" id="branch">
+                    <option value="">Choose Branch</option>
+                    <option value="Jakarta">JAKARTA - Jl.Wolter Monginsidi No.24 Kebayoran Baru-Jakarta Selatan</option>
+                    <option value="Jakarta">JAKARTA - Jalan Boulevard raya block LC6 NO.57, kelapagarding Jakarta Utara</option>
+                    <option value="Jakarta">JAKARTA - Lippo Mall Puri ST Moriz unit l2-53 & 55, Jl Puri Indah Boulevard blok VI, Jakarta</option>
+                    <option value="Semarang">SEMARANG - Jl. Pemuda No.118, Sekayu, Kec. Semarang Tengah, Kota Semarang, Jawa Tengah</option>
+                    <option value="Bandung">BANDUNG - Jalan Dr.Rajiman No 5-7, Pamoyanan, Bandung</option>
+                    <option value="Bandung">BANDUNG - Jl. Braga No.99-101, Braga, Kec. Sumur Bandung, Kota Bandung</option>
+                </select>
+            </div>
+            <span id="errorBranch" class="error"></span>
+            <br> 
+
+            <div class="box">
+                Message
+                <br> <br>
+                <textarea name="" id="msg" cols="" rows=""></textarea>
+            </div>
+            <span id="errorMsg" class="error"></span>
+            <br>
+        
+            <div>
+                 <input type="checkbox" name="" id="check"> I agree
+            </div>
+            <span id="errorCheck" class="error"></span>
+            <br> 
+            <input type="submit" value="CONFIRM" id="confirm" onclick="validate()">
+        </form>
+    </div>
+
+    <div class="footer">
+        <div class="social-media">
+            <a href="https://id-id.facebook.com/"><img src="assets/icon/fb.png" alt=""></a>
+            <a href="https://www.instagram.com/"><img src="assets/icon/ig.png" alt=""></a>
+            <a href="https://twitter.com/?lang=id"><img src="assets/icon/twitter.png" alt=""></a>
+        </div>
+        <div class="copyright">
+            &copy Danbam 2021
+        </div>
+    </div>
+</body>
+</html>

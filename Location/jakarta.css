@@ -1,0 +1,266 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.header{
+    width: 100%;
+    height: 90px;
+    background-color: rgba(25, 3, 112, 1);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+}
+
+#logo{
+    width: 200px;
+    height: 90px;
+    /* margin: 0px 0px 0px 10px; */
+    padding-left: 10px;
+
+    background-image: url(assets/Logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}   
+
+#logo:hover{ 
+    background-image: url(Assets/logo-hover.png);
+}
+
+.nav-button{
+    padding-right: 25px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-button img:hover{
+    content: url(Assets/icon/menu-after.png);
+    cursor: pointer;
+    position: relative;
+    left: 15px; 
+}
+
+.nav-button:hover .navigation{
+    display: block;
+    cursor: pointer;
+}
+
+.navigation{
+    display: none;
+    width: 12%;
+    position: absolute;
+    top: 90px;
+    right: 1px;
+    background-color: black;
+    border: solid rgb(152, 71, 255);
+    border-width: 5px;
+    border-radius: 0px 0px 0px 20px;
+    box-shadow: 0px 0px 10px 0px rgb(152, 71, 255);
+}
+
+.navigation li{
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.navigation li:hover{
+   text-shadow:0px 0px 10px white;
+}
+
+.content{
+    width: 100%;
+    padding-top: 110px;
+    padding-bottom: 50px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Location{
+    width: 90%;
+}
+
+.drop-down{
+    width: 30%;
+    max-width: 200px;
+    background-color: rgba(25, 3, 112, 1);
+    border-radius: 30px;
+    border: solid white;
+    color: white;
+    font-size: 22px;
+}
+
+.drop-down img{
+    width: 15px;
+    height: 15px;
+}
+
+.title{
+    width: 100%;
+    margin: 1px 0px 1px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.title img{
+    height: 40%;
+}
+
+.drop{
+    width: 30%;
+    max-width: 200px;
+    margin-top: 0px;
+    list-style-type: none;
+    font-size: 20px;
+    display: none;
+    position: absolute;
+    border-radius: 20px;
+    margin-left: -3px;
+    background-color: rgba(25, 3, 112, 1);
+    border: solid white;
+}
+
+.drop a{
+    text-decoration: none;
+    color: white;
+}
+
+.drop li{
+    padding: 15px;
+}
+
+.drop-down:hover .drop{
+    display: block;
+}
+
+.name{
+    width: 100%;
+    background-color: rgba(25, 3, 112, 1);
+    border-radius: 20px;
+    margin-top: 5px;
+    border-color: white;
+    border: 5px solid white;
+}
+
+.drop li:hover{
+    text-shadow: 0px 0px 10px white;
+}
+
+.address{
+    width: 100%;
+    /* height: 60vh; */
+    border-bottom: solid white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.address img{
+    margin: 10px 0px 10px 0px;
+    width: 40%;
+
+    margin-right: 20px;
+}
+
+.address div{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(25, 3, 112, 1);
+}
+
+.social-media{
+    height: 33%;
+}
+
+.social-media img{
+    height: 100%;
+    margin: 1px;
+}
+
+.copyright{
+    text-align: center;
+    font-weight: bold;
+    font-size: 12pt;
+
+    color: white;
+}
+
+@media screen and (max-width:969px){
+    .navigation{
+        width: 20%;
+    }
+
+    .navigation li{
+        font-size: 2.5vw;
+    }
+
+    .content{
+        height: 90vh;
+    }
+
+    .title{
+        font-size: 3vw;
+    }
+
+    .drop{
+        font-size: 2.5vw;
+    }
+
+    .drop li{
+        padding: 10px;
+    }
+
+    .address{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .address div{
+        font-size: 3vw;
+        margin-top: 10px;
+    }
+
+    .address img{
+        width: 70%;
+        margin: 10px 0px 10px 0px;
+    }
+
+    .address div{
+        margin: 10px 0;
+    }
+}
