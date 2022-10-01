@@ -29,13 +29,13 @@ body{
     /* margin: 0px 0px 0px 10px; */
     padding-left: 10px;
 
-    background-image: url(assets/Logo.png);
+    background-image: url(Assets/Logo.png);
     background-repeat: no-repeat;
     background-position: center;
 }   
 
 #logo:hover{ 
-    background-image: url(Assets/logo-hover.png);
+    background-image: url(Assets/Logo-hover.png);
 }
 
 .nav-button{
