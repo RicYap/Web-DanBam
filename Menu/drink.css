@@ -30,7 +30,7 @@ body{
 }   
 
 #logo:hover{ 
-    background-image: url(Assets/logo-hover.png);
+    background-image: url(assets/Logo-hover.png);
 }
 
 .nav-button{
@@ -41,7 +41,7 @@ body{
 }
 
 .nav-button img:hover{
-    content: url(Assets/icon/menu-after.png);
+    content: url(assets/icon/menu-after.png);
     cursor: pointer;
     position: relative;
     left: 15px; 
