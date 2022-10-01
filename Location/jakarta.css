@@ -24,13 +24,13 @@ body{
     /* margin: 0px 0px 0px 10px; */
     padding-left: 10px;
 
-    background-image: url(Assets/Logo.png);
+    background-image: url(assets/Logo.png);
     background-repeat: no-repeat;
     background-position: center;
 }   
 
 #logo:hover{ 
-    background-image: url(Assets/Logo-hover.png);
+    background-image: url(assets/Logo-hover.png);
 }
 
 .nav-button{
@@ -41,7 +41,7 @@ body{
 }
 
 .nav-button img:hover{
-    content: url(Assets/icon/menu-after.png);
+    content: url(assets/icon/menu-after.png);
     cursor: pointer;
     position: relative;
     left: 15px; 
