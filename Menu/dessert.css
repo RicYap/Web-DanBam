@@ -27,7 +27,7 @@ body{
 }   
 
 #logo:hover{ 
-    content: url(Assets/Logo-hover.png);
+    content: url(assets/Logo-hover.png);
     height: 100%;
     /* position: relative;
     right: 7px; */
@@ -41,7 +41,7 @@ body{
 }
 
 .nav-button img:hover{
-    content: url(Assets/icon/menu-after.png);
+    content: url(assets/icon/menu-after.png);
     cursor: pointer;
     position: relative;
     left: 15px; 
