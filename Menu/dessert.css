@@ -19,18 +19,17 @@ body{
 }
 
 #logo{
-    height: 100%;
-    padding-left: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 200px;
+    height: 90px;
+    padding-left: 10px;
+
+    background-image: url(assets/Logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }   
 
 #logo:hover{ 
-    content: url(assets/Logo-hover.png);
-    height: 100%;
-    /* position: relative;
-    right: 7px; */
+    background-image: url(assets/Logo-hover.png);
 }
 
 .nav-button{
@@ -82,7 +81,6 @@ body{
 .navigation li:hover{
    text-shadow:0px 0px 10px white;
 }
-
 
 .content{
     width: 100%;
@@ -229,7 +227,7 @@ button{
 }
 
 .teks2{
-    font-size: 20px;
+    font-size: 16pt;
 }
 
 .menu-info{
@@ -242,10 +240,16 @@ button{
 
 .catalog-menu{
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16pt;
 }
 
 .catalog-menu img{
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .order{
@@ -311,7 +315,7 @@ button#order:hover{
     }
 
     .teks2{
-        font-size: 2.2vw;;
+        font-size: 2.5vw;
     }
 
     .catalog-menu{
@@ -321,4 +325,5 @@ button#order:hover{
     button#order{
         font-size: 2.5vw;
     }
+
 }
