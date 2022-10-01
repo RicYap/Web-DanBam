@@ -21,7 +21,6 @@ body{
 #logo{
     width: 200px;
     height: 90px;
-    /* margin: 0px 0px 0px 10px; */
     padding-left: 10px;
 
     background-image: url(assets/Logo.png);
